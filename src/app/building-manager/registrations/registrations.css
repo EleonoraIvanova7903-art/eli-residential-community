@@ -1,0 +1,162 @@
+/* Registrations hero */
+.registrations-hero {
+  margin-bottom: 18px;
+  padding: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f8ef 100%);
+  border: 1px solid #e2eadf;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(20, 59, 31, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+/* Hero label */
+.registrations-hero-label {
+  margin-bottom: 10px;
+  color: #0f4d1d;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Hero text */
+.registrations-hero-content h2 {
+  margin: 0 0 10px;
+  color: #1b1d21;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.registrations-hero-content p {
+  max-width: 650px;
+  margin: 0;
+  color: #51565d;
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+/* Summary cards */
+.registrations-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.registrations-summary-grid article {
+  min-height: 125px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #dfe8da;
+  border-radius: 10px;
+}
+
+.registrations-summary-grid svg {
+  margin-bottom: 12px;
+  color: #0f4d1d;
+  font-size: 22px;
+}
+
+.registrations-summary-grid p {
+  margin: 0 0 8px;
+  color: #51565d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.registrations-summary-grid h3 {
+  margin: 0;
+  color: #1b1d21;
+  font-size: 32px;
+  line-height: 1;
+}
+
+/* Main registrations grid */
+.registrations-grid {
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 18px;
+  align-items: start;
+}
+
+/* Main table panel */
+.registrations-main-panel {
+  min-width: 0;
+}
+
+/* Details panel */
+.registrations-details-panel {
+  position: sticky;
+  top: 24px;
+}
+
+/* Registrations table */
+.registrations-table {
+  min-width: 920px;
+}
+
+/* Resident details list */
+.registrations-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.registrations-details-list div {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #edf2e9;
+}
+
+.registrations-details-list span {
+  margin-bottom: 5px;
+  color: #51565d;
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.registrations-details-list strong {
+  color: #1b1d21;
+  display: block;
+  font-size: 14px;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+/* Details action buttons */
+.registrations-details-actions {
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+  display: grid;
+  gap: 10px;
+}
+
+.registrations-full-btn {
+  width: 100%;
+  min-height: 38px;
+}
+
+/* Tablet layout */
+@media (max-width: 1300px) {
+  .registrations-hero,
+  .registrations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registrations-details-panel {
+    position: static;
+  }
+
+  .registrations-summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .registrations-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

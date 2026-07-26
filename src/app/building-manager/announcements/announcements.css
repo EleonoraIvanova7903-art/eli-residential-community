@@ -1,0 +1,463 @@
+/* Announcements hero */
+.announcements-hero {
+  margin-bottom: 18px;
+  padding: 24px;
+  background: linear-gradient(135deg, #f3f8ef, #ffffff);
+  border: 1px solid #e2eadf;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(20, 59, 31, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.announcements-hero span {
+  color: #0f4d1d;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.announcements-hero h2 {
+  margin: 8px 0 8px;
+  color: #1b1d21;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.announcements-hero p {
+  max-width: 720px;
+  margin: 0;
+  color: #51565d;
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+.announcements-hero-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 18px;
+  background: #0f4d1d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.announcements-hero-icon svg {
+  font-size: 34px;
+}
+
+/* Announcements summary cards */
+.announcements-summary-grid {
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.announcements-summary-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2eadf;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(20, 59, 31, 0.05);
+}
+
+.announcements-summary-card div {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background: #eef6ea;
+  color: #0f4d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcements-summary-card svg {
+  font-size: 19px;
+}
+
+.announcements-summary-card h3 {
+  margin: 0 0 5px;
+  color: #1b1d21;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.announcements-summary-card p {
+  margin: 0;
+  color: #51565d;
+  font-size: 13.5px;
+}
+
+/* Announcements page grid */
+.announcements-grid {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+/* Announcements form */
+.announcements-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.announcements-form label {
+  color: #1b1d21;
+  font-size: 13.5px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.announcements-form input,
+.announcements-form textarea,
+.announcements-form select {
+  width: 100%;
+  border: 1px solid #dfe8da;
+  border-radius: 8px;
+  outline: none;
+  background: #fbfdf8;
+  color: #1b1d21;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.announcements-form input,
+.announcements-form select {
+  min-height: 44px;
+  padding: 0 12px;
+}
+
+.announcements-form textarea {
+  min-height: 130px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.announcements-form input:focus,
+.announcements-form textarea:focus,
+.announcements-form select:focus {
+  border-color: #0f4d1d;
+  background: #ffffff;
+}
+
+.announcements-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.announcements-form button {
+  min-height: 46px;
+  margin-top: 4px;
+  padding: 0 16px;
+  border: 1px solid #0f4d1d;
+  border-radius: 8px;
+  background: #0f4d1d;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.announcements-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Announcements recipient box */
+.announcements-recipient-box {
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #dfe8da;
+  border-radius: 10px;
+  background: #fbfdf8;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.announcements-recipient-box legend {
+  padding: 0 6px;
+  color: #0f4d1d;
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.announcements-radio-option {
+  padding: 12px;
+  border: 1px solid #e2eadf;
+  border-radius: 8px;
+  background: #ffffff;
+  display: grid !important;
+  grid-template-columns: 18px 1fr;
+  gap: 10px !important;
+  align-items: center;
+  cursor: pointer;
+}
+
+.announcements-radio-option input {
+  width: 16px;
+  height: 16px;
+  min-height: auto;
+  padding: 0;
+  accent-color: #0f4d1d;
+}
+
+.announcements-radio-option span {
+  color: #1b1d21;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.announcements-radio-option svg {
+  color: #0f4d1d;
+}
+
+.announcements-resident-select {
+  margin-top: 2px;
+}
+
+/* Announcements toolbar */
+.announcements-toolbar {
+  margin-bottom: 16px;
+}
+
+.announcements-search {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 14px;
+  background: #fbfdf8;
+  border: 1px solid #dfe8da;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.announcements-search svg {
+  color: #0f4d1d;
+  font-size: 15px;
+}
+
+.announcements-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1b1d21;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.announcements-search input::placeholder {
+  color: #7b8086;
+}
+
+/* Announcements cards */
+.announcements-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.announcement-card {
+  padding: 16px;
+  background: #fbfdf8;
+  border: 1px solid #e2eadf;
+  border-radius: 12px;
+}
+
+.announcement-card-header {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.announcement-card-header h3 {
+  margin: 0 0 6px;
+  color: #1b1d21;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.announcement-card-header p {
+  margin: 0;
+  color: #51565d;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.announcement-recipient-line {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e2eadf;
+  color: #0f4d1d;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.announcement-recipient-line svg {
+  font-size: 14px;
+}
+
+.announcement-message {
+  margin: 0 0 14px;
+  color: #3f4349;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+/* Announcements badges */
+.announcement-meta-row {
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.announcement-category-badge,
+.announcement-priority-badge,
+.announcement-status-badge {
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.announcement-category-badge {
+  background: #eef6ea;
+  color: #0f4d1d;
+}
+
+.announcement-status-badge {
+  background: #eef6ea;
+  color: #0f4d1d;
+  white-space: nowrap;
+}
+
+.status-archived {
+  background: #f0f0f0;
+  color: #51565d;
+}
+
+.priority-normal {
+  background: #eef6ea;
+  color: #0f4d1d;
+}
+
+.priority-high {
+  background: #fff0ee;
+  color: #9f2e22;
+}
+
+.priority-low {
+  background: #f0f0f0;
+  color: #51565d;
+}
+
+/* Announcements actions */
+.announcement-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.announcement-archive-btn,
+.announcement-restore-btn {
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 12.5px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.announcement-archive-btn {
+  border: 1px solid #f0c8c2;
+  background: #fff0ee;
+  color: #9f2e22;
+}
+
+.announcement-restore-btn {
+  border: 1px solid #d8e7d0;
+  background: #eef6ea;
+  color: #0f4d1d;
+}
+
+/* Announcements tablet layout */
+@media (max-width: 1200px) {
+  .announcements-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .announcements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Announcements mobile layout */
+@media (max-width: 700px) {
+  .announcements-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .announcements-hero h2 {
+    font-size: 24px;
+  }
+
+  .announcements-hero-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .announcements-summary-grid,
+  .announcements-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .announcement-card-header {
+    flex-direction: column;
+  }
+
+  .announcement-actions {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,363 @@
+/* Data analysis hero */
+.analysis-hero {
+  margin-bottom: 18px;
+  padding: 24px;
+  background: linear-gradient(135deg, #f3f8ef, #ffffff);
+  border: 1px solid #e2eadf;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(20, 59, 31, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.analysis-hero span {
+  color: #0f4d1d;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.analysis-hero h2 {
+  margin: 8px 0 8px;
+  color: #1b1d21;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.analysis-hero p {
+  max-width: 760px;
+  margin: 0;
+  color: #51565d;
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+.analysis-hero-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 18px;
+  background: #0f4d1d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.analysis-hero-icon svg {
+  font-size: 34px;
+}
+
+/* Data analysis summary cards */
+.analysis-summary-grid {
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.analysis-summary-card {
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e2eadf;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(20, 59, 31, 0.05);
+}
+
+.analysis-summary-card div {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background: #eef6ea;
+  color: #0f4d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analysis-summary-card svg {
+  font-size: 18px;
+}
+
+.analysis-summary-card h3 {
+  margin: 0 0 5px;
+  color: #1b1d21;
+  font-size: 27px;
+  line-height: 1.1;
+}
+
+.analysis-summary-card p {
+  margin: 0;
+  color: #51565d;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+/* Data analysis main grid */
+.analysis-main-grid {
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Bar chart panel */
+.analysis-activity-panel {
+  min-height: 410px;
+}
+
+.analysis-chart-large {
+  width: 100%;
+  height: 330px;
+}
+
+/* Chart tooltip */
+.analysis-tooltip {
+  padding: 10px 12px;
+  background: #ffffff;
+  border: 1px solid #e2eadf;
+  border-radius: 9px;
+  box-shadow: 0 10px 28px rgba(20, 59, 31, 0.12);
+}
+
+.analysis-tooltip strong {
+  margin-bottom: 6px;
+  color: #1b1d21;
+  display: block;
+  font-size: 13px;
+}
+
+.analysis-tooltip p {
+  margin: 3px 0;
+  color: #51565d;
+  font-size: 12.5px;
+}
+
+.analysis-tooltip span {
+  color: #0f4d1d;
+  font-weight: 800;
+}
+
+/* Insights panel */
+.analysis-insights-panel {
+  min-height: 410px;
+}
+
+.analysis-insight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.analysis-insight-card {
+  padding: 14px;
+  background: #fbfdf8;
+  border: 1px solid #e2eadf;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.analysis-insight-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #eef6ea;
+  color: #0f4d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analysis-insight-icon svg {
+  font-size: 18px;
+}
+
+.analysis-insight-card h3 {
+  margin: 0 0 6px;
+  color: #1b1d21;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.analysis-insight-card p {
+  margin: 0 0 8px;
+  color: #51565d;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.analysis-insight-card span {
+  min-height: 26px;
+  padding: 0 9px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 11.5px;
+  font-weight: 800;
+}
+
+.insight-good span {
+  background: #eef6ea;
+  color: #0f4d1d;
+}
+
+.insight-warning span {
+  background: #fff2df;
+  color: #a06510;
+}
+
+.insight-review span {
+  background: #edf2ff;
+  color: #2f6f9f;
+}
+
+/* Donut chart grid */
+.analysis-donut-grid {
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.analysis-donut-panel {
+  min-height: 370px;
+}
+
+.analysis-donut-content {
+  width: 100%;
+}
+
+.analysis-donut-chart {
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+.analysis-donut-center {
+  width: 90px;
+  height: 64px;
+  pointer-events: none;
+  position: absolute;
+  top: 93px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.analysis-donut-center strong {
+  color: #1b1d21;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.analysis-donut-center span {
+  margin-top: 5px;
+  color: #51565d;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* Recharts polish */
+.analysis-chart-large .recharts-cartesian-grid-horizontal line,
+.analysis-chart-large .recharts-cartesian-grid-vertical line {
+  stroke: #edf2e9;
+}
+
+.analysis-chart-large .recharts-text,
+.analysis-donut-chart .recharts-text {
+  fill: #51565d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.analysis-donut-chart .recharts-legend-wrapper {
+  padding-top: 8px;
+}
+
+.analysis-donut-chart .recharts-default-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
+}
+
+.analysis-donut-chart .recharts-legend-item {
+  margin-right: 0 !important;
+  color: #51565d !important;
+  font-size: 12px;
+}
+
+/* Footer status */
+.analysis-footer-status {
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #eef6ea;
+  color: #0f4d1d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12.5px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* Data analysis tablet layout */
+@media (max-width: 1300px) {
+  .analysis-summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .analysis-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-donut-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Data analysis mobile layout */
+@media (max-width: 700px) {
+  .analysis-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .analysis-hero h2 {
+    font-size: 24px;
+  }
+
+  .analysis-hero-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .analysis-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-donut-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-chart-large {
+    height: 300px;
+  }
+}

@@ -1,0 +1,806 @@
+/* Issues page hero */
+.resident-issues-hero {
+  margin-bottom: 24px;
+  padding: 30px;
+  border: 1px solid #d6e0d3;
+  border-radius: 16px;
+  background: linear-gradient(120deg, #5f7866, #78917d);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: 0 14px 32px rgba(74, 101, 82, 0.14);
+}
+
+.resident-issues-hero > div:first-child {
+  max-width: 730px;
+}
+
+.resident-issues-hero > div:first-child > span {
+  display: block;
+  margin-bottom: 8px;
+  color: #eef4ec;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.resident-issues-hero h2 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 31px;
+  line-height: 1.2;
+}
+
+.resident-issues-hero p {
+  margin: 0;
+  color: #f5f8f4;
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.resident-issues-hero-icon {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resident-issues-hero-icon svg {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+/* Issue summary cards */
+.resident-issues-summary {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.resident-issues-summary article {
+  min-height: 108px;
+  padding: 20px;
+  border: 1px solid #e1e7dc;
+  border-radius: 12px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 14px;
+  align-items: center;
+  box-shadow: 0 8px 22px rgba(20, 59, 31, 0.06);
+}
+
+.resident-issues-summary article > div {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eef3eb;
+  color: #526e59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resident-issues-summary article > div svg {
+  font-size: 20px;
+}
+
+.resident-issues-summary section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resident-issues-summary span {
+  color: #626a63;
+  font-size: 13px;
+}
+
+.resident-issues-summary strong {
+  color: #143b1f;
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Main issues layout */
+.resident-issues-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(340px, 0.8fr)
+    minmax(0, 1.2fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.resident-issue-form-panel,
+.resident-issue-history-panel {
+  padding: 24px;
+  border: 1px solid #e1e7dc;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(20, 59, 31, 0.06);
+}
+
+.resident-issue-form-panel {
+  position: sticky;
+  top: 116px;
+}
+
+/* Section headings */
+.resident-issues-section-heading {
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7ece3;
+}
+
+.resident-issues-section-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resident-issues-section-heading > div > svg {
+  color: #526e59;
+  font-size: 21px;
+}
+
+.resident-issues-section-heading h2 {
+  margin: 0 0 4px;
+  color: #143b1f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+}
+
+.resident-issues-section-heading p {
+  margin: 0;
+  color: #6a706b;
+  font-size: 13px;
+}
+
+/* Issue form */
+.resident-issue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.resident-issue-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resident-issue-field label {
+  color: #1b1d21;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.resident-issue-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.resident-issue-input {
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #dce6d7;
+  border-radius: 8px;
+  background: #fbfdf8;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  align-items: center;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.resident-issue-input:focus-within {
+  border-color: #5f7866;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(95, 120, 102, 0.11);
+}
+
+.resident-issue-input svg {
+  color: #526e59;
+  font-size: 14px;
+}
+
+.resident-issue-input input,
+.resident-issue-input select {
+  width: 100%;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1b1d21;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.5px;
+}
+
+.resident-issue-field textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 13px 14px;
+  border: 1px solid #dce6d7;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  background: #fbfdf8;
+  color: #1b1d21;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.55;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.resident-issue-field textarea:focus {
+  border-color: #5f7866;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(95, 120, 102, 0.11);
+}
+
+.resident-issue-field textarea::placeholder,
+.resident-issue-input input::placeholder {
+  color: #7a8179;
+}
+
+/* Resident address information */
+.resident-issue-profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.resident-issue-profile-item {
+  padding: 13px;
+  border: 1px solid #dce6d7;
+  border-radius: 8px;
+  background: #f7faf4;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 9px;
+  align-items: center;
+}
+
+.resident-issue-profile-item > svg {
+  color: #526e59;
+  font-size: 15px;
+}
+
+.resident-issue-profile-item span {
+  display: block;
+  margin-bottom: 3px;
+  color: #747c75;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.resident-issue-profile-item strong {
+  color: #1b1d21;
+  display: block;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+/* Issue information message */
+.resident-issue-information {
+  padding: 13px 14px;
+  border: 1px solid #d8e3d5;
+  border-radius: 8px;
+  background: #f4f8f2;
+  color: #52625a;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 9px;
+  align-items: flex-start;
+}
+
+.resident-issue-information svg {
+  margin-top: 2px;
+  color: #526e59;
+}
+
+.resident-issue-information p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+/* Issue form feedback */
+.resident-issue-feedback {
+  padding: 13px 14px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 9px;
+  align-items: flex-start;
+}
+
+.resident-issue-feedback svg {
+  margin-top: 2px;
+}
+
+.resident-issue-feedback p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.resident-issue-feedback.success {
+  border: 1px solid #cde0c9;
+  background: #eef6ea;
+  color: #31583a;
+}
+
+.resident-issue-feedback.success svg {
+  color: #397044;
+}
+
+.resident-issue-feedback.error {
+  border: 1px solid #efc7c1;
+  background: #fff2f0;
+  color: #8d2d23;
+}
+
+.resident-issue-feedback.error svg {
+  color: #9f2e22;
+}
+
+/* Submit issue button */
+.resident-issue-submit {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid #526e59;
+  border-radius: 8px;
+  background: #526e59;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.resident-issue-submit:hover {
+  border-color: #425b48;
+  background: #425b48;
+  transform: translateY(-1px);
+}
+
+.resident-issue-submit:disabled {
+  border-color: #9ba99e;
+  background: #9ba99e;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Issue history toolbar */
+.resident-issues-toolbar {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 12px;
+}
+
+.resident-issues-search,
+.resident-issues-filter {
+  min-height: 44px;
+  padding: 0 13px;
+  border: 1px solid #dce6d7;
+  border-radius: 8px;
+  background: #fbfdf8;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 9px;
+  align-items: center;
+}
+
+.resident-issues-search:focus-within,
+.resident-issues-filter:focus-within {
+  border-color: #5f7866;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(95, 120, 102, 0.1);
+}
+
+.resident-issues-search svg,
+.resident-issues-filter svg {
+  color: #526e59;
+  font-size: 13px;
+}
+
+.resident-issues-search input,
+.resident-issues-filter select {
+  width: 100%;
+  height: 42px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1b1d21;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/* Issue report list */
+.resident-issues-list {
+  display: grid;
+  gap: 16px;
+}
+
+.resident-issue-card {
+  padding: 19px;
+  border: 1px solid #e1e7dc;
+  border-radius: 12px;
+  background: #fbfdf8;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.resident-issue-card:hover {
+  border-color: #c7d6c3;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(20, 59, 31, 0.07);
+  transform: translateY(-1px);
+}
+
+/* Issue card heading */
+.resident-issue-card-heading {
+  margin-bottom: 17px;
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.resident-issue-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #eef3eb;
+  color: #526e59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resident-issue-card-icon svg {
+  font-size: 18px;
+}
+
+.resident-issue-card-heading section {
+  min-width: 0;
+}
+
+.resident-issue-card-heading section > span {
+  display: block;
+  margin-bottom: 4px;
+  color: #687069;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+}
+
+.resident-issue-card-heading h3 {
+  margin: 0;
+  color: #1b1d21;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+/* Issue status badges */
+.resident-issue-status {
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #edf2eb;
+  color: #4d5b4f;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.resident-issue-status.status-open,
+.resident-issue-status.status-pending {
+  background: #fff1d8;
+  color: #855708;
+}
+
+.resident-issue-status.status-in-progress {
+  background: #e8eef5;
+  color: #3e5e7d;
+}
+
+.resident-issue-status.status-resolved {
+  background: #e3f2e2;
+  color: #2f6a39;
+}
+
+.resident-issue-status.status-closed {
+  background: #edf0f2;
+  color: #525f68;
+}
+
+/* Issue details grid */
+.resident-issue-meta-grid {
+  margin-bottom: 16px;
+  padding: 15px;
+  border: 1px solid #e2e9df;
+  border-radius: 9px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.resident-issue-meta-grid > div {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 9px;
+  align-items: flex-start;
+}
+
+.resident-issue-meta-grid > div > svg {
+  margin-top: 3px;
+  color: #526e59;
+  font-size: 13px;
+}
+
+.resident-issue-meta-grid span {
+  display: block;
+  margin-bottom: 3px;
+  color: #7a8179;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.resident-issue-meta-grid strong {
+  color: #1b1d21;
+  display: block;
+  font-size: 12.5px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+/* Issue priority text */
+.resident-issue-priority.priority-low {
+  color: #356d87;
+}
+
+.resident-issue-priority.priority-medium {
+  color: #855708;
+}
+
+.resident-issue-priority.priority-high {
+  color: #a24d1d;
+}
+
+.resident-issue-priority.priority-urgent {
+  color: #982f25;
+}
+
+/* Issue description */
+.resident-issue-description {
+  margin-bottom: 14px;
+}
+
+.resident-issue-description > span {
+  display: block;
+  margin-bottom: 5px;
+  color: #6a706b;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.resident-issue-description p {
+  margin: 0;
+  color: #51565d;
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+
+/* Issue status notes */
+.resident-issue-status-note {
+  padding: 11px 12px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.resident-issue-status-note svg {
+  margin-top: 2px;
+}
+
+.resident-issue-status-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.resident-issue-status-note.open {
+  border: 1px solid #ead9b5;
+  background: #fff8e8;
+  color: #785210;
+}
+
+.resident-issue-status-note.in-progress {
+  border: 1px solid #d4dfe9;
+  background: #f0f4f8;
+  color: #405d77;
+}
+
+.resident-issue-status-note.resolved {
+  border: 1px solid #cde0c9;
+  background: #eef6ea;
+  color: #31583a;
+}
+
+.resident-issue-status-note.closed {
+  border: 1px solid #d9dfe2;
+  background: #f4f6f7;
+  color: #525f68;
+}
+
+/* Empty issue state */
+.resident-issues-empty {
+  min-height: 250px;
+  padding: 32px;
+  border: 1px dashed #cfdacb;
+  border-radius: 12px;
+  background: #fbfdf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.resident-issues-empty > svg {
+  margin-bottom: 15px;
+  color: #78917d;
+  font-size: 38px;
+}
+
+.resident-issues-empty h3 {
+  margin: 0 0 8px;
+  color: #143b1f;
+  font-size: 18px;
+}
+
+.resident-issues-empty p {
+  max-width: 390px;
+  margin: 0;
+  color: #687069;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+/* Page error */
+.resident-issues-page-error {
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  border: 1px solid #efc7c1;
+  border-radius: 9px;
+  background: #fff2f0;
+  color: #8d2d23;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.resident-issues-page-error svg {
+  margin-top: 2px;
+  color: #9f2e22;
+}
+
+.resident-issues-page-error p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+/* Desktop adjustment */
+@media (max-width: 1180px) {
+  .resident-issues-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resident-issues-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resident-issue-form-panel {
+    position: static;
+  }
+}
+
+/* Tablet layout */
+@media (max-width: 760px) {
+  .resident-issues-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .resident-issue-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 620px) {
+  .resident-issues-hero {
+    padding: 24px 20px;
+    align-items: flex-start;
+  }
+
+  .resident-issues-hero h2 {
+    font-size: 25px;
+  }
+
+  .resident-issues-hero-icon {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+  }
+
+  .resident-issues-hero-icon svg {
+    font-size: 24px;
+  }
+
+  .resident-issues-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .resident-issue-form-panel,
+  .resident-issue-history-panel {
+    padding: 18px;
+  }
+
+  .resident-issue-two-columns,
+  .resident-issue-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resident-issue-card-heading {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .resident-issue-status {
+    grid-column: 1 / -1;
+    width: max-content;
+  }
+}
