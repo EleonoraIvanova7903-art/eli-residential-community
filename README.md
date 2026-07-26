@@ -13,6 +13,20 @@ reporting, notifications and data analysis.
 Firebase Authentication is used for account access, while Cloud
 Firestore is used to store and update the application data.
 
+## Live Application and Source Code
+
+The deployed application is available at:
+
+https://eli-residential-community.vercel.app/
+
+The source code repository is available at:
+
+https://github.com/EleonoraIvanova7903-art/eli-residential-community
+
+The deployed login page is available at:
+
+https://eli-residential-community.vercel.app/login
+
 ## Test Login Accounts
 
 The following accounts can be used to access and test the application.
@@ -43,9 +57,13 @@ Password: 123456
 This is a second approved resident account and can be used to test
 resident-specific functionality.
 
-The login page is available at:
+For local development, the login page is available at:
 
 http://localhost:3000/login
+
+For the deployed application, the login page is available at:
+
+https://eli-residential-community.vercel.app/login
 
 ## Main Functionality
 
@@ -124,10 +142,14 @@ started or built.
 
 ## Firebase Configuration
 
-The `.env.local` file must remain in the main project folder.
+The `.env.local` file must remain in the main project folder on the
+local computer.
 
 It contains the Firebase configuration required by Firebase
 Authentication and Cloud Firestore.
+
+The `.env.local` file must not be uploaded to the public GitHub
+repository.
 
 The application uses the following environment variables:
 
@@ -147,9 +169,13 @@ Start the development server with:
 
     npm run dev
 
-Then open the application in a browser:
+Then open the local application in a browser:
 
 http://localhost:3000
+
+The deployed application can be opened at:
+
+https://eli-residential-community.vercel.app/
 
 ## Application Areas
 
@@ -248,10 +274,13 @@ http://localhost:3000
 
 ## Important Notes
 
+- The deployed application is available through Vercel.
+- The project source code is available through GitHub.
 - Run `npm install` after downloading or copying the project.
 - Do not manually create the `node_modules` folder.
 - Do not manually create the `.next` folder.
-- Keep the `.env.local` file in the main project folder.
+- Keep the `.env.local` file in the main project folder locally.
+- Do not upload the `.env.local` file to GitHub.
 - Resident accounts must be approved and active.
 - The Forgot Password function is outside the current project scope.
 - The application is written entirely in JavaScript.
